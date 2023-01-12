@@ -5,7 +5,8 @@
   margin: 0;
   padding: 0;
 }
-body {
+body
+{
   font-family: 'Inter', sans-serif;
   max-width: 375px;
   border: 2px solid red;
