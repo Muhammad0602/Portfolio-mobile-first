@@ -5,26 +5,26 @@
   margin: 0;
   padding: 0;
 }
-body
-{
+
+body {
   font-family: 'Inter', sans-serif;
   max-width: 375px;
   border: 2px solid red;
 }
 
-
 /* The header of the project */
+
 .header {
   padding: 20px;
-  display: flex; 
+  display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   font-size: 20px;
 }
 
 /* The headline of the project */
 
-.headlines {
+.headlines {    
   margin-top: 30px;
   padding: 25px;
   display: flex;
@@ -33,27 +33,32 @@ body
   align-items: center;
   text-align: center;
 }
+
 .headlines h1 {
   font-size: 40px;
   font-weight: 700;
 }
+
 .headlines p {
   margin-top: 30px;
   font-size: 20px;
   font-weight: 400;
 }
 .myname {
-  color:#172B4D;
+  color:#172f4d;
 }
+
 .myjob {
-  color:#36B37E;;
+  color:#36b37e;
 }
 
 /* The social icons */
+
 .social-media-icons nav {
   justify-content: center;
   display:flex;
 }
+
 .social-media-icons a{
   padding: 10px;
 }
