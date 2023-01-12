@@ -24,7 +24,8 @@ body {
 
 /* The headline of the project */
 
-.headlines {    
+.headlines {
+
   margin-top: 30px;
   padding: 25px;
   display: flex;
@@ -44,21 +45,22 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
+
 .myname {
-  color:#172f4d;
+  color: #172f4d;
 }
 
 .myjob {
-  color:#36b37e;
+  color: #36b37e;
 }
 
 /* The social icons */
 
 .social-media-icons nav {
   justify-content: center;
-  display:flex;
+  display: flex;
 }
 
-.social-media-icons a{
+.social-media-icons a {
   padding: 10px;
 }
