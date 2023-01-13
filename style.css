@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -8,25 +10,37 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  font-style: normal;
   max-width: 375px;
   border: 2px solid red;
 }
 
 /* The header of the project */
 
-.header {
-  padding: 20px;
+.header a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #28352F;
+}
+.toolbar {
+  padding: 5px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
 }
 
 /* The headline of the project */
 
 .headlines {
-  margin-top: 30px;
+/* border: 2px solid red; */
+  background-image: url(socialicons/header-illsutration-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: 375px 540px;
+  /* background-size: cover; */
+  background-position: center;
+  margin-top: 35px;
   padding: 25px;
+  padding-top: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,13 +48,16 @@ body {
   text-align: center;
 }
 
-.headlines h1 {
+.headlines h1,h2 {
+  /* border: 2px solid red; */
   font-size: 40px;
   font-weight: 700;
 }
 
 .headlines p {
-  margin-top: 30px;
+  /* border: 2px solid red; */
+  margin-top: 40px;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -55,11 +72,13 @@ body {
 
 /* The social icons */
 
-.social-media-icons nav {
+.social-media-icons ul {
+  margin-top: 20px;
   justify-content: center;
   display: flex;
 }
 
-.social-media-icons a {
+.social-media-icons li {
   padding: 10px;
+  list-style: none;
 }
