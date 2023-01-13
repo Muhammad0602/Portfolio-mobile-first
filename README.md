@@ -14,7 +14,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -53,14 +52,6 @@ Portfolio-mobile-first is a project about making a portfolio for mobile view, wh
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
@@ -90,9 +81,9 @@ To run the project, execute the following command:
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Muhammad0602)
-- Twitter: [@twitterhandle](https://twitter.com/MuhammadDavla20)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5zQSHZiZSVmySVTvtpVYVA%3D%3D)
+- GitHub: [Muhammad0602](https://github.com/Muhammad0602)
+- Twitter: [Muhammad Davlatov](https://twitter.com/MuhammadDavla20)
+- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5zQSHZiZSVmySVTvtpVYVA%3D%3D)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
