@@ -20,8 +20,9 @@ body {
 .header a {
   font-size: 20px;
   font-weight: 600;
-  color: #28352F;
+  color: #28352f;
 }
+
 .toolbar {
   padding: 5px 30px;
   display: flex;
@@ -32,11 +33,9 @@ body {
 /* The headline of the project */
 
 .headlines {
-/* border: 2px solid red; */
   background-image: url(socialicons/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: 375px 540px;
-  /* background-size: cover; */
   background-position: center;
   margin-top: 35px;
   padding: 25px;
@@ -49,13 +48,11 @@ body {
 }
 
 .headlines h1,h2 {
-  /* border: 2px solid red; */
   font-size: 40px;
   font-weight: 700;
 }
 
 .headlines p {
-  /* border: 2px solid red; */
   margin-top: 40px;
   margin-bottom: 10px;
   font-size: 20px;
