@@ -47,7 +47,8 @@ body {
   text-align: center;
 }
 
-.headlines h1,h2 {
+.headlines h1,
+  h2 {
   font-size: 40px;
   font-weight: 700;
 }
