@@ -29,7 +29,9 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+.menuicon {
+  text-decoration: none;
+}
 /* The headline of the project */
 
 .headlines {
