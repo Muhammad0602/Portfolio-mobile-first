@@ -180,9 +180,8 @@ ul > li {
 }
 
 .bio-text .first-image {
- display: flex;
- /* justify-content: space-around; */
- margin-left: 60px;
+  display: flex;
+  margin-left: 60px;
 }
 
 .me {
@@ -205,8 +204,8 @@ ul > li {
 }
 
 .bio-text .second-image {
-display: flex;
-margin-right: 50px;
+  display: flex;
+  margin-right: 50px;
 }
 
 .about-card {
