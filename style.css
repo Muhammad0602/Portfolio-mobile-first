@@ -80,6 +80,16 @@ h2 {
   display: flex;
 }
 
+ul > li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ebf0ee;
+  padding: 8px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
 .social-media-icons li {
   padding: 10px;
   list-style: none;
@@ -140,16 +150,6 @@ h2 {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
-}
-
-ul > li {
-  list-style: none;
-  font-size: 12px;
-  font-weight: 600;
-  background-color: #ebf0ee;
-  padding: 8px 10px;
-  border-radius: 4px;
-  letter-spacing: 1px;
 }
 
 .project-btn {
