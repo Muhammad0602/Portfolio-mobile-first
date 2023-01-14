@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>portfolio README</b></h3>
+  <h3><b> My Portfolio README</b></h3>
 
 </div>
 
