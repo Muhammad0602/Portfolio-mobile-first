@@ -3,7 +3,7 @@
 
 <div align="center">
 
-  <h3><b>portfolio README</b></h3>
+  <h3><b> My Portfolio README</b></h3>
 
 </div>
 
@@ -28,7 +28,7 @@
 # 📖 Portfolio-mobile-first <a name="about-project"></a>
 
 
-Portfolio-mobile-first is a project about making a portfolio for mobile view, which is done using flexbox.
+Portfolio-mobile-first is a project about making a portfolio for mobile view. This project is done using flexbox and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -89,7 +89,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- I am working on updating the project.
+- I am working on adding the desktop version of these project.
 - I am working to make responsive.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

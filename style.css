@@ -42,7 +42,7 @@ body {
   background-size: 375px 540px;
   background-position: center;
   margin-top: 35px;
-  padding: 25px;
+  padding: 24px;
   padding-top: 35px;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,160 @@ h2 {
   display: flex;
 }
 
+ul > li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #ebf0ee;
+  padding: 8px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+
 .social-media-icons li {
   padding: 10px;
   list-style: none;
+}
+
+/* My works */
+
+.my-works {
+  padding: 25px 15px 25px 25px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 100px 50px repeat(6, 1fr);
+  gap: 20px;
+}
+
+.my-works h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.center {
+  margin: 0 auto;
+  border-radius: 24px;
+}
+
+.container {
+  /* margin-top: 100px; */
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 327px;
+  height: 252px;
+}
+
+/* multi-post stories job */
+
+.post-stories {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.post-stories h4 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #3a4a42;
+  padding: 16px;
+}
+
+.my-works ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-btn {
+  font-weight: 500;
+  font-size: 17px;
+  padding: 12px;
+  border: 1px solid #36b37f;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #36b37f;
+  margin: 10px auto 25px auto;
+  letter-spacing: 1px;
+}
+
+.project-btn:hover {
+  background-color: rgb(205, 248, 247);
+  color: black;
+}
+
+/* About me  */
+
+.about-me {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bio-text {
+  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"), url("socialicons/illustration\ 2-about\ me\ mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 300px -10px, 1px 319px;
+  z-index: 1;
+}
+
+.bio-text h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #172b4d;
+  margin-top: 40px;
+}
+
+.bio-text p {
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #42526e;
+  margin: 25px 0 15px 0;
+  padding: 0 15px 0 15px;
+}
+
+.about-card {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  align-items: center;
+  background-color: #ebf0ee;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+
+.about-card .image {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.about-card h4 {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #344563;
+}
+
+.lists ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.about-card ul > li {
+  background-color: #fff;
+  color: #36b37e;
 }
