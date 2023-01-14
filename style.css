@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  max-width: 375px;
+  border: 2px solid red;
+}
+
+/* The header of the project */
+
+.header a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #28352f;
+}
+
+.toolbar {
+  padding: 5px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuicon {
+  text-decoration: none;
+}
+
+/* The headline of the project */
+
+.headlines {
+  background-image: url(socialicons/header-illsutration-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-size: 375px 540px;
+  background-position: center;
+  margin-top: 35px;
+  padding: 25px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headlines h1,
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.headlines p {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.myname {
+  color: #172f4d;
+}
+
+.myjob {
+  color: #36b37e;
+}
+
+/* The social icons */
+
+.social-media-icons ul {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.social-media-icons li {
+  padding: 10px;
+  list-style: none;
+}
