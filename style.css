@@ -116,10 +116,9 @@ h2 {
 
   }
  
+     /* multi-post stories job */
 
-      /* multi-post stories job */
   .post-stories {
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   text-align: center;
