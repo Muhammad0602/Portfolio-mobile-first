@@ -179,13 +179,11 @@ ul > li {
   margin: 24px;
 }
 
-.bio-text .first-image {
-  display: flex;
-  margin-left: 60px;
-}
-
-.me {
-  order: -1;
+.bio-text {
+  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"), url("socialicons/illustration\ 2-about\ me\ mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 300px -10px, 1px 319px;
+  z-index: 1;
 }
 
 .bio-text h2 {
@@ -201,11 +199,6 @@ ul > li {
   font-weight: 400;
   color: #42526e;
   margin: -30px 0 15px 0;
-}
-
-.bio-text .second-image {
-  display: flex;
-  margin-right: 50px;
 }
 
 .about-card {
