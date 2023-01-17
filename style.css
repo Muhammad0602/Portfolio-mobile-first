@@ -13,6 +13,9 @@ body {
   font-style: normal;
   max-width: 375px;
   border: 2px solid red;
+  background-image: url("./socialicons/contact-form.svg");
+  background-repeat: no-repeat;
+  background-position: 316px 6155px;
 }
 
 /* The header of the project */
@@ -80,7 +83,8 @@ h2 {
   display: flex;
 }
 
-.post-stories ul > li, .lists ul > li {
+.post-stories ul > li,
+.lists ul > li {
   list-style: none;
   font-size: 12px;
   font-weight: 600;
@@ -169,6 +173,11 @@ h2 {
   color: black;
 }
 
+.project-btn:active {
+  background-color: #008552;
+  color: #fff;
+}
+
 /* About me  */
 
 .about-me {
@@ -211,6 +220,8 @@ h2 {
   background-color: #ebf0ee;
   gap: 30px;
   padding-bottom: 70px;
+  margin: auto 24px;
+  border: 1px solid #c1c7d0;
 }
 
 .about-card .image {
@@ -239,51 +250,52 @@ h2 {
   color: #36b37e;
 }
 
- /* contact section  */
+/* contact section  */
 
- #contact {
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
- }
- 
- #contact h3 {
+}
+
+#contact h3 {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  color: #172B4D;
-  margin: 50px 0;
- }
+  color: #172b4d;
+  margin: 50px 24px;
+}
 
- #contact-form {
+#contact-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
- }
+}
 
- .input-padding {
-   width: 327px;
-   padding: 16px;
-   border-radius: 4px;
-   border: 1px solid #D0D9D4;
- }
+.input-padding {
+  width: 327px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid #d0d9d4;
+}
 
- #message {
-  border: 1px solid #60C095;
-  font-family: inherit; 
- }
+#message {
+  border: 1px solid #60c095;
+  font-family: inherit;
+}
 
- #message::placeholder {
-  color: #091E42;
- }
+#message::placeholder {
+  color: #091e42;
+}
 
 #footer {
   text-align: center;
   margin-bottom: 250px;
+  margin-top: -10px;
 }
 
- #footer-email {
- text-decoration: none;
- color: #42526E;
- }
+#footer-email {
+  text-decoration: none;
+  color: #42526e;
+}
