@@ -28,7 +28,7 @@
 # 📖 Portfolio-mobile-first <a name="about-project"></a>
 
 
-Portfolio-mobile-first is a project about making a portfolio for mobile view. This project is done using flexbox and grid layout.
+This project is how you make the mobile vesrion of your portfolio. It is done using semantic html and css, essentially with flexbox and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -79,18 +79,24 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Muhammad Davlatov**
 
 - GitHub: [Muhammad0602](https://github.com/Muhammad0602)
 - Twitter: [Muhammad Davlatov](https://twitter.com/MuhammadDavla20)
-- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B5zQSHZiZSVmySVTvtpVYVA%3D%3D)
+- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov)
+
+👤 **Bahir Hakimi**
+
+- GitHub: [BahirHakimy](https://github.com/BahirHakimy)
+- Twitter: [bahir hakimy](https://www.twitter.com/bahir_hakimy)
+- LinkedIn: [bahir hakimy](https://www.linkedin.com/in/bahir-hakimy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- I am working on adding the desktop version of these project.
-- I am working to make responsive.
+- I am working on the desktop version of the project, and soon Good willing I'll deploy it.
+- I am working to make it responsive, so it works on any screensize.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
