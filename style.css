@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 *,
 *::after,
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   max-width: 375px;
   border: 2px solid red;
@@ -179,7 +179,8 @@ ul > li {
 }
 
 .bio-text {
-  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"), url("socialicons/illustration\ 2-about\ me\ mobile.svg");
+  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
+    url("socialicons/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position: 300px -10px, 1px 319px;
   z-index: 1;
