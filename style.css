@@ -12,10 +12,10 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   max-width: 375px;
-  border: 2px solid red;
   background-image: url("./socialicons/contact-form.svg");
   background-repeat: no-repeat;
-  background-position: 316px 6155px;
+  background-position: 396px 6135px;
+  margin: auto;
 }
 
 /* The header of the project */
