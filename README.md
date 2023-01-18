@@ -95,7 +95,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- I am working on the desktop version of the project, and soon Good willing I'll deploy it.
+- I am working on the desktop version of the project, and soon God willing I'll deploy it.
 - I am working to make it responsive, so it works on any screensize.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
