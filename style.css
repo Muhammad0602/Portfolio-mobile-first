@@ -83,6 +83,11 @@ h2 {
   display: flex;
 }
 
+.social-media-icons li {
+  padding: 10px;
+  list-style: none;
+}
+
 .post-stories ul > li,
 .lists ul > li {
   list-style: none;
@@ -92,11 +97,6 @@ h2 {
   padding: 8px 10px;
   border-radius: 4px;
   letter-spacing: 1px;
-}
-
-.social-media-icons li {
-  padding: 10px;
-  list-style: none;
 }
 
 /* My works */
@@ -121,7 +121,6 @@ h2 {
 }
 
 .container {
-  /* margin-top: 100px; */
   border: 2px solid #d0d9d4;
   border-radius: 8px;
 }
