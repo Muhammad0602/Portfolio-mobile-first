@@ -14,8 +14,7 @@ body {
   max-width: 375px;
   background-image: url("./socialicons/contact-form.svg");
   background-repeat: no-repeat;
-  background-position: 396px 6135px;
-  margin: auto;
+  background-position: 315px 6140px;
 }
 
 /* The header of the project */
@@ -81,6 +80,7 @@ h2 {
   margin-top: 20px;
   justify-content: center;
   display: flex;
+  align-items: center;
 }
 
 .social-media-icons li {
@@ -193,7 +193,6 @@ h2 {
     url("socialicons/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position: 300px -10px, 1px 319px;
-  z-index: 1;
 }
 
 .bio-text h2 {
