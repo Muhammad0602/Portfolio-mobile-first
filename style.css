@@ -11,7 +11,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  max-width: 375px;
+  width: 375px;
   background-image: url("./socialicons/contact-form.svg");
   background-repeat: no-repeat;
   background-position: 315px 6140px;
@@ -36,6 +36,10 @@ body {
   text-decoration: none;
 }
 
+.navbar ul {
+  display: none;
+}
+
 /* The headline of the project */
 
 .headlines {
@@ -57,6 +61,7 @@ body {
 h2 {
   font-size: 40px;
   font-weight: 700;
+  line-height: 52px;
 }
 
 .headlines p {
@@ -88,6 +93,10 @@ h2 {
   list-style: none;
 }
 
+.social-media-icons ul li > a {
+  transition: all 0.5s;
+}
+
 .post-stories ul > li,
 .lists ul > li {
   list-style: none;
@@ -99,20 +108,31 @@ h2 {
   letter-spacing: 1px;
 }
 
+#chevron {
+  margin-top: 50px;
+  border: 1px solid #dfe1e6;
+  padding: 8px;
+  border-radius: 32px;
+}
+
 /* My works */
 
 .my-works {
   padding: 25px 15px 25px 25px;
   text-align: center;
   display: grid;
-  grid-template-rows: 100px 50px repeat(6, 1fr);
+  grid-template-rows: 120px 50px repeat(6, 1fr);
+  justify-content: center;
   gap: 20px;
+  margin-top: 0;
 }
 
 .my-works h2 {
   font-size: 40px;
   font-weight: 700;
   color: #172b4d;
+  line-height: 52px;
+  padding: 24px;
 }
 
 .center {
@@ -123,11 +143,17 @@ h2 {
 .container {
   border: 2px solid #d0d9d4;
   border-radius: 8px;
+  width: 369px;
+  height: 474px;
+}
+
+.card {
+  height: 250px;
 }
 
 .card img {
-  width: 327px;
-  height: 252px;
+  width: 366px;
+  height: 250px;
 }
 
 /* multi-post stories job */
@@ -139,6 +165,8 @@ h2 {
   justify-content: center;
   background-color: #fff;
   border-radius: 8px;
+  width: 366px;
+  height: 221px;
 }
 
 .post-stories h4 {
@@ -152,7 +180,7 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .project-btn {
@@ -187,9 +215,7 @@ h2 {
 }
 
 .bio-text {
-  background-image:
-
-    url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
+  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
     url("socialicons/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position: 300px -10px, 1px 319px;
@@ -212,6 +238,8 @@ h2 {
 }
 
 .about-card {
+  width: 366px;
+  height: 352px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -298,4 +326,133 @@ h2 {
 #footer-email {
   text-decoration: none;
   color: #42526e;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 1440px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .navbar li a {
+    text-decoration: none;
+  }
+
+  .headlines {
+    /* margin: 0 auto; */
+    width: 100%;
+    height: 100vh;
+    padding: 160px 0;
+    background-image: url("socialicons/desktop\ image\ header.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .headlines h1,
+  h2 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .headlines p {
+    line-height: 32px;
+    width: 56%;
+  }
+
+  .my-works {
+    grid-template: 100px 474px 474px / repeat(3, 366px);
+    margin-top: 100px;
+  }
+
+  .my-works h2 {
+    grid-column: 1 / 4;
+  }
+
+  .center {
+    display: none;
+  }
+
+  .about-me {
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template: 450px 352px / repeat(3, 366px);
+  }
+
+  .about-me .bio-text {
+    grid-column: 1 / 4;
+    margin: 150px 178px 50px 178px;
+    background-image: url("socialicons/about-me-desktop.svg");
+    background-repeat: no-repeat;
+  }
+
+  #contact {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 463px 684px;
+    margin-top: 150px;
+    margin-bottom: 260px;
+    gap: 15px;
+  }
+
+  #contact h3 {
+    font-size: 30px;
+    line-height: 52px;
+    width: 463px;
+    height: 256px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .input-padding {
+    width: 684px;
+    height: 48px;
+  }
+
+  #message {
+    height: 114px;
+  }
+
+  .touch-btn {
+    margin-left: 0;
+  }
+
+  #footer {
+    border-top: 1px solid #dfe1e6;
+    margin-bottom: 20px;
+  }
+  #footer-email {
+    display: none;
+  }
+}
+
+/* The animation part of the project  */
+
+.social-media-icons ul li > a:hover {
+  transform: scale(2.5);
+  padding: 12px;
+  border-radius: 50%;
+  background: aquamarine;
+}
+
+.desktop-navs > a {
+  transition: all 0.5s;
+}
+
+.desktop-navs > a:hover {
+  font-size: 22px;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #172f4d;
+  color: #36b37e;
 }
