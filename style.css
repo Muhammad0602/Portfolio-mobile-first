@@ -93,6 +93,10 @@ h2 {
   list-style: none;
 }
 
+.desktop-navs > a {
+  transition: all 0.5s;
+}
+
 .social-media-icons ul li > a {
   transition: all 0.5s;
 }
@@ -215,9 +219,10 @@ h2 {
 }
 
 .bio-text {
-  background-image: 
-  url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
-  url("socialicons/illustration\ 2-about\ me\ mobile.svg");
+  background-image:
+
+    url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
+    url("socialicons/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position: 300px -10px, 1px 319px;
 }
@@ -393,7 +398,8 @@ h2 {
 
   .bio-text {
     grid-column: 1 / 4;
-    margin: 100px 0; 
+    margin: 100px 0;
+
     background-image: url("socialicons/about-me-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -404,7 +410,7 @@ h2 {
   .bio-text p {
     margin: 15px 170px;
   }
-  
+
   #contact {
     display: grid;
     justify-content: center;
@@ -442,6 +448,7 @@ h2 {
     border-top: 1px solid #dfe1e6;
     margin-bottom: 20px;
   }
+
   #footer-email {
     display: none;
   }
@@ -449,20 +456,16 @@ h2 {
 
 /* The animation part of the project  */
 
-.social-media-icons ul li > a:hover {
-  transform: scale(2.5);
-  padding: 12px;
-  border-radius: 50%;
-  background: aquamarine;
-}
-
-.desktop-navs > a {
-  transition: all 0.5s;
-}
-
 .desktop-navs > a:hover {
   font-size: 22px;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #172f4d;
   color: #36b37e;
+}
+
+.social-media-icons ul li > a:hover {
+  transform: scale(2.5);
+  padding: 12px;
+  border-radius: 50%;
+  background: aquamarine;
 }
