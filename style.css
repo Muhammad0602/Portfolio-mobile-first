@@ -399,7 +399,6 @@ h2 {
   .bio-text {
     grid-column: 1 / 4;
     margin: 100px 0;
-
     background-image: url("socialicons/about-me-desktop.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -411,7 +410,6 @@ h2 {
     margin: 15px 170px;
   }
 
- 
   #contact {
     display: grid;
     justify-content: center;
