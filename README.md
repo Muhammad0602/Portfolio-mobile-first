@@ -52,7 +52,7 @@ This project is how you make the mobile vesrion of your portfolio. It is done us
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://muhammad0602.github.io/Portfolio-mobile-first/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
