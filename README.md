@@ -86,7 +86,7 @@ To run the project, execute the following command:
 
 - GitHub: [Muhammad0602](https://github.com/Muhammad0602)
 - Twitter: [Muhammad Davlatov](https://twitter.com/MuhammadDavla20)
-- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov)
+- LinkedIn: [Muhammad Davlatov](https://www.linkedin.com/in/muhammad-davlatov-6a8536254/)
 
 👤 **Bahir Hakimi**
 
