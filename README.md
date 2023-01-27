@@ -58,6 +58,10 @@ This project is how you make the mobile vesrion of your portfolio. It is done us
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+### Before doing anything, I would recommend you to watch this video to get a better understanding of this project.
+
+   https://www.loom.com/share/f1235440c84247f4846005e6717ccbe6
+
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
