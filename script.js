@@ -18,30 +18,30 @@ hamburger.addEventListener('click', function () {
   contact.style.textDecoration = 'none';
   nav.style.gap = '40px';
   closeBtn.hidden = false;
-  closeBtn.style.float ='right';
+  closeBtn.style.float = 'right';
   closeBtn.style.marginRight = '40px';
 });
 
-closeBtn.addEventListener('click', function () {
+closeBtn.addEventListener('click', btn = () => {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
-})
+});
 
 portfolio.addEventListener('click', function () {
-  nav.style.display =  'none';
+  nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
-})
+});
 
 about.addEventListener('click', function () {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
-})
+});
 
 contact.addEventListener('click', function () {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
-})
+});
