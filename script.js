@@ -6,7 +6,7 @@ const contact = document.getElementById('contact-nav');
 const closeBtn = document.querySelector('#close-btn');
 const toolbar = document.querySelector('.toolbar');
 
-closeBtn.addEventListener('click', function () {
+hamburger.addEventListener('click', () => {
   nav.style.display = 'flex';
   nav.style.flexDirection = 'column';
   nav.style.alignItems = 'left';
@@ -22,25 +22,25 @@ closeBtn.addEventListener('click', function () {
   closeBtn.style.marginRight = '40px';
 });
 
-closeBtn.addEventListener('click', function () {
+closeBtn.addEventListener('click', () => {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
 });
 
-portfolio.addEventListener('click', function () {
+portfolio.addEventListener('click', () => {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
 });
 
-about.addEventListener('click', function () {
+about.addEventListener('click', () => {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
 });
 
-contact.addEventListener('click', function () {
+contact.addEventListener('click', () => {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
