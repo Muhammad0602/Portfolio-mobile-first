@@ -22,7 +22,7 @@ hamburger.addEventListener('click', function () {
   closeBtn.style.marginRight = '40px';
 });
 
-closeBtn.addEventListener('click', btn = () => {
+closeBtn.addEventListener('click', function () {
   nav.style.display = 'none';
   closeBtn.style.display = 'none';
   toolbar.style.display = 'flex';
