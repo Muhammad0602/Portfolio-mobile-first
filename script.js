@@ -16,10 +16,14 @@ hamburger.addEventListener('click', () => {
   portfolio.style.textDecoration = 'none';
   about.style.textDecoration = 'none';
   contact.style.textDecoration = 'none';
-  nav.style.gap = '40px';
-  closeBtn.hidden = false;
+  nav.style.gap = '30px';
+  closeBtn.style.display = 'flex';
   closeBtn.style.float = 'right';
-  closeBtn.style.marginRight = '40px';
+  closeBtn.style.marginRight = '40px'; 
+  nav.style.height = '100vh';
+  portfolio.style.fontSize = '30px';
+  about.style.fontSize = '30px';
+  contact.style.fontSize = '30px';
 });
 
 closeBtn.addEventListener('click', () => {
