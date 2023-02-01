@@ -309,14 +309,14 @@ const cardWorkDesktop = (items1) => `
        <div class="btn-container">
         <a href=${arrayDesktop[items1].linkVersion} class="livebtn-desktop">
           See Live
-          <img src="socialicons/liveicon.svg" alt="live icon">
-        </a>
+           <img src="socialicons/liveicon.svg" alt="live icon">
+        </a>    
         </div>
         <div class="btn-container">
           <a href=${arrayDesktop[items1].linkSource} class="sourcebtn-desktop">
             See Source
             <img src="socialicons/sourceicon.svg" alt="source icon">
-          </a>
+          </a>  
         </div>
     </div>
     </div>
@@ -374,12 +374,14 @@ for (let i = 0; i < popupBtn.length; i += 1) {
 for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
     overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
     const cardDesktop = document.createElement('div');
     cardDesktop.innerHTML = cardWorkDesktop(i);
     document.body.append(cardDesktop);
     const closeDetail = document.querySelector('.close-detail-desktop');
     closeDetail.addEventListener('click', async () => {
       overlay.classList.remove('active');
+      document.body.style.overflow = 'visible';
       document.body.removeChild(cardDesktop);
     });
   });
