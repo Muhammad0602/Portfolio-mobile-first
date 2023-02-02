@@ -391,7 +391,7 @@ for (let i = 0; i < popupBtn.length; i += 1) {
   });
 }
 
-const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+const re = /[A-Z]/;
 form.addEventListener('submit', (e) => {
   if (re.test(email.value) && email.value === email.value.toLowerCase()) {
     message.innerText = '';
