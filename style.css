@@ -157,6 +157,94 @@ h2 {
   height: 250px;
 }
 
+/* popup window */
+
+.card-work-mobile {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  padding: 16px;
+  gap: 12px;
+  position: fixed;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  top: 0;
+  bottom: 0;
+  width: 350px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card-work-mobile .close-detail-mobile {
+  position: absolute;
+  right: 37px;
+  top: 37px;
+}
+
+.card-work-mobile .card-name-mobile {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.card-work-mobile .card-tags {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 8px;
+  list-style: none;
+  background: #fff;
+  justify-content: start;
+}
+
+.about-card ul > li {
+  background-color: #fff;
+  color: #36b37e;
+}
+
+.card-work-mobile .card-tags li {
+  padding: 0.5em;
+  background: #ebf0ee;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.card-work-mobile .card-button-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-work-mobile .livebtn-mobile,
+.card-work-mobile .sourcebtn-mobile {
+  text-align: center;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  padding: 12px;
+  gap: 10px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.card-work-desktop {
+  display: none;
+}
+
 /* multi-post stories job */
 
 .post-stories {
@@ -276,11 +364,6 @@ h2 {
   border-radius: 4px;
 }
 
-.about-card ul > li {
-  background-color: #fff;
-  color: #36b37e;
-}
-
 /* contact section  */
 
 #contact {
@@ -331,6 +414,22 @@ h2 {
   color: #42526e;
 }
 
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
 @media (min-width: 768px) {
   body {
     width: 100%;
@@ -375,6 +474,123 @@ h2 {
     line-height: 32px;
     width: 56%;
   }
+
+  /* popup window below here  */
+
+  .card-work-mobile {
+    display: none;
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+  }
+
+  #overlay.active {
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  .card-work-desktop {
+    width: 70%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    padding: 16px;
+    gap: 12px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+  }
+
+  .card-work-desktop .close-detail-desktop {
+    position: absolute;
+    right: 24px;
+    top: 22px;
+  }
+
+  .card-image-details-desktop {
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  .popup-title-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card-work-desktop .card-name-desktop {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    width: 590px;
+  }
+
+  .card-work-desktop .card-tags {
+    margin-left: 0;
+    display: flex;
+    list-style: none;
+    gap: 5px;
+  }
+
+  .card-description-desktop {
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #344563;
+    font-size: 16px;
+  }
+
+  .card-work-desktop .card-tags li {
+    background: #ebecf0;
+    border-radius: 8px;
+    padding: 8px 12px;
+  }
+
+  .card-work-desktop .card-button-desktop {
+    display: flex;
+  }
+
+  .card-button-desktop .btn-container {
+    display: flex;
+    width: 170px;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .card-work-desktop .livebtn-desktop,
+  .card-work-desktop .sourcebtn-desktop {
+    text-align: center;
+    background-color: #36b37f;
+    border-radius: 8px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff;
+    padding: 12px;
+    gap: 10px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  /* popup window above here  */
 
   .my-works {
     grid-template: 100px 474px 474px / repeat(3, 366px);

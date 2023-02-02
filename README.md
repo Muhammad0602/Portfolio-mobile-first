@@ -98,6 +98,14 @@ To run the project, execute the following command:
 - Twitter: [bahir hakimy](https://www.twitter.com/bahir_hakimy)
 - LinkedIn: [bahir hakimy](https://www.linkedin.com/in/bahir-hakimy)
 
+👤 **Malcom Charles**
+
+- GitHub: [Malcom Charles] (https://github.com/Malcom-Charlie)
+
+👤 **Malcom Charles**
+
+- GitHub: [Nestor Oro] (https://github.com/blueberry1312)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
