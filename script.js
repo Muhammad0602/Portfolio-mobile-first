@@ -364,12 +364,14 @@ contact.addEventListener('click', () => {
 for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
     overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
     const cardWork = document.createElement('div');
     cardWork.innerHTML = cardWorkMobile(i);
     document.body.append(cardWork);
     const closeDetail = document.querySelector('.close-detail-mobile');
     closeDetail.addEventListener('click', async () => {
       overlay.classList.remove('active');
+      document.body.style.overflow = 'visible';
       document.body.removeChild(cardWork);
     });
   });
