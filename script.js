@@ -5,8 +5,11 @@ const about = document.getElementById('about-nav');
 const contact = document.getElementById('contact-nav');
 const closeBtn = document.querySelector('#close-btn');
 const toolbar = document.querySelector('.toolbar');
-const popupBtn = document.querySelectorAll('.project-btn');
+const popupBtn = document.querySelectorAll('.popup-btn');
 const overlay = document.querySelector('#overlay');
+const email = document.getElementById('email');
+const message = document.querySelector('small');
+const submitBtn = document.getElementById('submit-btn');
 
 hamburger.addEventListener('click', () => {
   nav.style.display = 'flex';
@@ -386,3 +389,15 @@ for (let i = 0; i < popupBtn.length; i += 1) {
     });
   });
 }
+
+const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
+submitBtn.addEventListener('click', (e) => {
+  if (re.test(email.value) && email.value === email.value.toLowerCase()) {
+    message.innerText = '';
+  } else {
+    message.innerText = 'Your email should be in lowercase!';
+    message.classList.add('error');
+    submitBtn.style.marginTop = '0';
+    e.preventDefault();
+  }
+});
