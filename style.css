@@ -387,6 +387,11 @@ h2 {
   gap: 20px;
 }
 
+.error {
+  color: red;
+  margin-bottom: 0;
+}
+
 .input-padding {
   width: 327px;
   padding: 16px;
