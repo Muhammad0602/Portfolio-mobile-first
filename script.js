@@ -10,6 +10,7 @@ const overlay = document.querySelector('#overlay');
 const email = document.getElementById('email');
 const message = document.querySelector('small');
 const submitBtn = document.getElementById('submit-btn');
+const form = document.getElementById('contact-form');
 
 hamburger.addEventListener('click', () => {
   nav.style.display = 'flex';
@@ -391,7 +392,7 @@ for (let i = 0; i < popupBtn.length; i += 1) {
 }
 
 const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
-submitBtn.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   if (re.test(email.value) && email.value === email.value.toLowerCase()) {
     message.innerText = '';
   } else {
