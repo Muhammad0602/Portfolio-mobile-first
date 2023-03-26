@@ -104,7 +104,7 @@ To run the project, execute the following command:
 
 - GitHub: [Malcom Charles] (https://github.com/Malcom-Charlie)
 
-👤 **Malcom Charles**
+👤 **Nestor Oro**
 
 - GitHub: [Nestor Oro] (https://github.com/blueberry1312)
 
