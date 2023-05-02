@@ -102,11 +102,11 @@ To run the project, execute the following command:
 
 👤 **Malcom Charles**
 
-- GitHub: [Malcom Charles] (https://github.com/Malcom-Charlie)
+- GitHub: [Malcom Charles](https://github.com/Malcom-Charlie)
 
 👤 **Nestor Oro**
 
-- GitHub: [Nestor Oro] (https://github.com/blueberry1312)
+- GitHub: [Nestor Oro](https://github.com/blueberry1312)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
