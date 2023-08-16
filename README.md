@@ -29,7 +29,7 @@
 # 📖 Portfolio-mobile-first <a name="about-project"></a>
 
 
-This project is how you make the mobile version of your portfolio. It is done using semantic HTML and CSS, essentially with flexbox and grid layout.
+This project is how you make the mobile version of your portfolio. It is done using semantic HTML, CSS and JavaScript, essentially with flexbox and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
