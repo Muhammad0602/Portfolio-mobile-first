@@ -35,7 +35,7 @@ hamburger.addEventListener('click', () => {
 const arrayCards = [
   {
     id: 0,
-    url: 'socialicons/Snapshoot.svg',
+    url: 'socialicons/udemy1.png',
     name: 'Keeping track of hundreds of components ',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -53,7 +53,7 @@ const arrayCards = [
   },
   {
     id: 1,
-    url: 'socialicons/Snapshoot.svg',
+    url: 'socialicons/leaderboard2.png',
     name: 'Keeping track of hundreds of components ',
     description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -146,7 +146,7 @@ const arrayCards = [
 const arrayDesktop = [
   {
     id: 0,
-    url: 'socialicons/Snapshoot-Portfolio.png',
+    url: 'socialicons/udemy.png',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
@@ -168,7 +168,7 @@ const arrayDesktop = [
   },
   {
     id: 1,
-    url: 'socialicons/Snapshoot-Portfolio.png',
+    url: 'socialicons/leaderboard1.png',
     name: 'Keeping track of hundreds of components ',
     linkVersion: '#',
     linkSource: '#',
