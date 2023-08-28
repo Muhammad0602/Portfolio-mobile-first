@@ -11,7 +11,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-  width: 375px;
+  /* width: 375px; */
   background-image: url("./socialicons/contact-form.svg");
   background-repeat: no-repeat;
   background-position: 315px 6140px;
@@ -159,7 +159,7 @@ h2 {
 
 /* popup window */
 
-.card-work-mobile {
+.card-work {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -176,38 +176,50 @@ h2 {
   width: 350px;
   left: 50%;
   transform: translate(-50%);
+  height: 80vh;
 }
 
-.card-work-mobile .close-detail-mobile {
+.card-work .close-detail {
   position: absolute;
-  right: 37px;
-  top: 37px;
+  right: 2.5rem;
+  top: 2rem;
+  padding: 5px;
+  background: #ffeeee;
+  border-radius: 5px;
 }
 
-.card-work-mobile .card-name-mobile {
+.card-work .card-name {
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2em;
+  line-height: 1.2em;
   color: #172b4d;
 }
 
-.card-work-mobile .card-tags {
+.card-image-details {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  height: 15em;
+}
+
+.card-work .mob-tags {
   display: flex;
   flex-direction: row;
   padding: 0;
-  gap: 8px;
+  gap: 10px;
   list-style: none;
   background: #fff;
   justify-content: start;
 }
-
+.card-tags {
+  display: none;
+}
 .about-card ul > li {
   background-color: #fff;
   color: #36b37e;
 }
 
-.card-work-mobile .card-tags li {
+.card-work .mob-tags li {
   padding: 0.5em;
   background: #ebf0ee;
   border-radius: 4px;
@@ -217,14 +229,15 @@ h2 {
   color: #3a4a42;
 }
 
-.card-work-mobile .card-button-mobile {
+.card-work .card-button {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  order: 444;
 }
 
-.card-work-mobile .livebtn-mobile,
-.card-work-mobile .sourcebtn-mobile {
+.card-work .livebtn,
+.card-work .sourcebtn {
   text-align: center;
   background-color: #36b37f;
   border-radius: 4px;
@@ -239,10 +252,6 @@ h2 {
   text-decoration: none;
   display: flex;
   align-items: center;
-}
-
-.card-work-desktop {
-  display: none;
 }
 
 /* multi-post stories job */
@@ -304,9 +313,7 @@ h2 {
 }
 
 .bio-text {
-  background-image:
-
-    url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
+  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
     url("socialicons/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position: 300px -10px, 1px 319px;
@@ -329,17 +336,17 @@ h2 {
 }
 
 .about-card {
-  width: 366px;
-  height: 352px;
+  width: 23em;
+  height: 25em;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   padding: 24px;
   align-items: center;
   background-color: #ebf0ee;
-  gap: 30px;
+  gap: 33px;
   padding-bottom: 70px;
-  margin: auto 24px;
+  margin: 0.5rem auto;
   border: 1px solid #c1c7d0;
 }
 
@@ -426,7 +433,7 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   pointer-events: none;
 }
 
@@ -482,9 +489,9 @@ h2 {
 
   /* popup window below here  */
 
-  .card-work-mobile {
+  /* .card-work-mobile {
     display: none;
-  }
+  } */
 
   #overlay {
     position: fixed;
@@ -502,7 +509,7 @@ h2 {
     opacity: 1;
   }
 
-  .card-work-desktop {
+  .card-work {
     width: 70%;
     height: 85%;
     display: flex;
@@ -519,40 +526,45 @@ h2 {
     overflow-y: scroll;
   }
 
-  .card-work-desktop .close-detail-desktop {
-    position: absolute;
-    right: 24px;
-    top: 22px;
+  .card-work .close-detail {
+    right: 1rem;
+    top: 0.5rem;
+    padding: 0.5rem;
+    background: #684b4b;
+    border-radius: 0.4rem;
   }
 
-  .card-image-details-desktop {
-    padding-top: 40px;
-    width: 100%;
+  .card-image-details {
+    margin-top: 2rem;
+    height: 38rem;
+    padding-bottom: 1rem;
   }
 
-  .popup-title-desktop {
+  .popup-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .card-work-desktop .card-name-desktop {
-    font-style: normal;
+  .card-work .card-name {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    color: #172b4d;
     width: 590px;
+    /* display: inline-flex; */
+    /* vertical-align: middle; */
+    border: 1px solid red;
+    /* margin-top: 3rem; */
   }
 
-  .card-work-desktop .card-tags {
+  .card-work .card-tags {
     margin-left: 0;
     display: flex;
     list-style: none;
     gap: 5px;
   }
 
-  .card-description-desktop {
+  .card-description {
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -560,39 +572,35 @@ h2 {
     font-size: 16px;
   }
 
-  .card-work-desktop .card-tags li {
+  .card-work .card-tags li {
     background: #ebecf0;
     border-radius: 8px;
     padding: 8px 12px;
   }
 
-  .card-work-desktop .card-button-desktop {
+  .card-work .card-button {
     display: flex;
+    /* margin-left: 30rem; */
+    order: 0;
+    justify-content: end;
+    border: 1px solid red;
   }
 
-  .card-button-desktop .btn-container {
+  .card-button .btn-container {
     display: flex;
     width: 170px;
     justify-content: end;
     align-items: center;
   }
 
-  .card-work-desktop .livebtn-desktop,
-  .card-work-desktop .sourcebtn-desktop {
-    text-align: center;
-    background-color: #36b37f;
+  .card-work .livebtn,
+  .card-work .sourcebtn {
     border-radius: 8px;
-    border: none;
-    font-weight: 500;
-    font-size: 17px;
-    color: #fff;
-    padding: 12px;
-    gap: 10px;
-    letter-spacing: 0.03em;
-    line-height: 24px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
+  }
+
+  .card-work .mob-tags {
+    display: none;
+    /* visibility: hidden; */
   }
 
   /* popup window above here  */
