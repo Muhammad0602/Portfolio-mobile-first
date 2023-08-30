@@ -1,3 +1,5 @@
+import arrayDesktop from './info.js';
+
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('.navbar > ul ');
 const portfolio = document.getElementById('portfolio-nav');
@@ -7,7 +9,9 @@ const closeBtn = document.querySelector('#close-btn');
 const toolbar = document.querySelector('.toolbar');
 const popupBtn = document.querySelectorAll('.popup-btn');
 const overlay = document.querySelector('#overlay');
+const fullName = document.getElementById('name');
 const email = document.getElementById('email');
+const text = document.getElementById('message');
 const message = document.querySelector('small');
 const submitBtn = document.getElementById('submit-btn');
 const form = document.getElementById('contact-form');
@@ -32,307 +36,37 @@ hamburger.addEventListener('click', () => {
   contact.style.fontSize = '30px';
 });
 
-const arrayCards = [
-  {
-    id: 0,
-    url: 'socialicons/udemy1.png',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 1,
-    url: 'socialicons/leaderboard2.png',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 2,
-    url: 'socialicons/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 3,
-    url: 'socialicons/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 4,
-    url: 'socialicons/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-  {
-    id: 5,
-    url: 'socialicons/Snapshoot.svg',
-    name: 'Keeping track of hundreds of components ',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-    tecnologies: {
-      tech1: 'Ruby on rails',
-      tech2: 'css',
-      tech3: 'JavScript',
-    },
-    linkVersion: '#',
-    linkSource: '#',
-  },
-];
+const cardWorkDesktop = (items) => `
+  <article class="card-work">
+    <img src="socialicons/Icon.png" alt="close detail desktop" class="close-detail">
+    <picture>
+      <source media="(min-width:768px)" srcset="${arrayDesktop[items].url[0]}"></source>
+      <img src=${arrayDesktop[items].url[1]} alt="details image" class="card-image-details">
+    </picture>
 
-const arrayDesktop = [
-  {
-    id: 0,
-    url: 'socialicons/udemy.png',
-    name: 'Keeping track of hundreds of components ',
-    linkVersion: '#',
-    linkSource: '#',
-    tecnologies: {
-      tech1: 'codekit',
-      tech2: 'github',
-      tech3: 'JavaScript',
-      tech4: 'bootstrap',
-      tech5: 'terminal',
-      tech6: 'codepen',
-    },
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-
-  },
-  {
-    id: 1,
-    url: 'socialicons/leaderboard1.png',
-    name: 'Keeping track of hundreds of components ',
-    linkVersion: '#',
-    linkSource: '#',
-    tecnologies: {
-      tech1: 'codekit',
-      tech2: 'github',
-      tech3: 'JavaScript',
-      tech4: 'bootstrap',
-      tech5: 'terminal',
-      tech6: 'codepen',
-    },
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-
-  },
-  {
-    id: 2,
-    url: 'socialicons/Snapshoot-Portfolio.png',
-    name: 'Keeping track of hundreds of components ',
-    linkVersion: '#',
-    linkSource: '#',
-    tecnologies: {
-      tech1: 'codekit',
-      tech2: 'github',
-      tech3: 'JavaScript',
-      tech4: 'bootstrap',
-      tech5: 'terminal',
-      tech6: 'codepen',
-    },
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-
-  },
-  {
-    id: 3,
-    url: 'socialicons/Snapshoot-Portfolio.png',
-    name: 'Keeping track of hundreds of components ',
-    linkVersion: '#',
-    linkSource: '#',
-    tecnologies: {
-      tech1: 'codekit',
-      tech2: 'github',
-      tech3: 'JavaScript',
-      tech4: 'bootstrap',
-      tech5: 'terminal',
-      tech6: 'codepen',
-    },
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-
-  },
-  {
-    id: 4,
-    url: 'socialicons/Snapshoot-Portfolio.png',
-    name: 'Keeping track of hundreds of components ',
-    linkVersion: '#',
-    linkSource: '#',
-    tecnologies: {
-      tech1: 'codekit',
-      tech2: 'github',
-      tech3: 'JavaScript',
-      tech4: 'bootstrap',
-      tech5: 'terminal',
-      tech6: 'codepen',
-    },
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-
-  },
-  {
-    id: 5,
-    url: 'socialicons/Snapshoot-Portfolio.png',
-    name: 'Keeping track of hundreds of components ',
-    linkVersion: '#',
-    linkSource: '#',
-    tecnologies: {
-      tech1: 'codekit',
-      tech2: 'github',
-      tech3: 'JavaScript',
-      tech4: 'bootstrap',
-      tech5: 'terminal',
-      tech6: 'codepen',
-    },
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-    when an unknown printer took a galley of type and scrambled it 1960s with the relea`,
-
-  },
-];
-
-const cardWorkMobile = (items) => `
-  <article class="card-work-mobile">
-    <img src="socialicons/closedetailbtn.svg" alt="close detail mobile" class="close-detail-mobile">
-    <img src=${arrayCards[items].url} alt="details image" class="card-image-details-mobile">
-    <h2 class="card-name-mobile">${arrayCards[items].name}</h2>
-    <ul class="card-tags">
-      <li>${arrayCards[items].tecnologies.tech1}</li>
-      <li>${arrayCards[items].tecnologies.tech2}</li>
-      <li>${arrayCards[items].tecnologies.tech3}</li>
-    </ul>
-    <p class="card-description-mobile">${arrayCards[items].description}</p>
-    <div class="card-button-mobile">
-      <a href=${arrayCards[items].linkVersion} class="livebtn-mobile">
-        See Live
-        <img src="socialicons/liveicon.svg" alt="live icon">
-      </a>
-      <a href=${arrayCards[items].linkSource} class="sourcebtn-mobile">
-        See Source
-        <img src="socialicons/sourceicon.svg" alt="source icon">
-      </a>
-    </div>
-    <script src="index.js"></script>
-  </article>
-`;
-
-const cardWorkDesktop = (items1) => `
-  <article class="card-work-desktop">
-    <img src="socialicons/Icon.png" alt="close detail desktop" class="close-detail-desktop">
-    <img src=${arrayDesktop[items1].url} alt="details image" class="card-image-details-desktop">
-    <div class="popup-title-desktop">
-    <h2 class="card-name-desktop">${arrayDesktop[items1].name}</h2>
-    <div class="card-button-desktop">
+    <h2 class="card-name">${arrayDesktop[items].name}</h2>
+    <div class="card-button">
        <div class="btn-container">
-        <a href=${arrayDesktop[items1].linkVersion} class="livebtn-desktop">
+        <a href=${arrayDesktop[items].linkVersion} class="livebtn">
           See Live
            <img src="socialicons/liveicon.svg" alt="live icon">
         </a>    
         </div>
         <div class="btn-container">
-          <a href=${arrayDesktop[items1].linkSource} class="sourcebtn-desktop">
+          <a href=${arrayDesktop[items].linkSource} class="sourcebtn">
             See Source
             <img src="socialicons/sourceicon.svg" alt="source icon">
           </a>  
         </div>
     </div>
-    </div>
-    <ul class="card-tags">
-      <li>${arrayDesktop[items1].tecnologies.tech1}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech2}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech3}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech4}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech5}</li>
-      <li>${arrayDesktop[items1].tecnologies.tech6}</li>
+  
+    <ul class="mob-tags">
+     ${arrayDesktop[items].tecnologies.mobile.map((tech) => `<li>${tech}</li>`).join('')}
     </ul>
-    <p class="card-description-desktop">${arrayDesktop[items1].description}</p>
+    <ul class="card-tags">
+      ${arrayDesktop[items].tecnologies.desktop.map((tech) => `<li>${tech}</li>`).join('')}
+    </ul>
+    <p class="card-description">${arrayDesktop[items].description}</p>
     <script src="index.js"></script>
   </article>
 `;
@@ -365,33 +99,19 @@ for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {
     overlay.classList.add('active');
     document.body.style.overflow = 'hidden';
-    const cardWork = document.createElement('div');
-    cardWork.innerHTML = cardWorkMobile(i);
-    document.body.append(cardWork);
-    const closeDetail = document.querySelector('.close-detail-mobile');
-    closeDetail.addEventListener('click', async () => {
-      overlay.classList.remove('active');
-      document.body.style.overflow = 'visible';
-      document.body.removeChild(cardWork);
-    });
-  });
-}
-
-for (let i = 0; i < popupBtn.length; i += 1) {
-  popupBtn[i].addEventListener('click', () => {
-    overlay.classList.add('active');
-    document.body.style.overflow = 'hidden';
     const cardDesktop = document.createElement('div');
     cardDesktop.innerHTML = cardWorkDesktop(i);
     document.body.append(cardDesktop);
-    const closeDetail = document.querySelector('.close-detail-desktop');
-    closeDetail.addEventListener('click', async () => {
+    const closeDetail = document.querySelector('.close-detail');
+    closeDetail.addEventListener('click', () => {
       overlay.classList.remove('active');
       document.body.style.overflow = 'visible';
       document.body.removeChild(cardDesktop);
     });
   });
 }
+
+// Validation of the form
 
 const re = /^[a-z0-9]+([._%+-][a-z0-9]+)*@[a-z0-9]+([.-][a-z0-9]+)*\.[a-z]{2,}$/;
 form.addEventListener('submit', (e) => {
@@ -402,5 +122,39 @@ form.addEventListener('submit', (e) => {
     message.classList.add('error');
     submitBtn.style.marginTop = '0';
     e.preventDefault();
+  }
+});
+
+//  save input values inside of an object and localStorage
+
+const inputFieldValues = {};
+
+form.addEventListener('input', () => {
+  inputFieldValues.name = fullName.value;
+  inputFieldValues.email = email.value;
+  inputFieldValues.message = text.value;
+  localStorage.setItem('storeValues', JSON.stringify(inputFieldValues));
+});
+
+// Taking the input values back from the localStorage
+
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
+    const receivedValues = JSON.parse(localStorage.getItem('storeValues'));
+    fullName.value = receivedValues.name;
+    email.value = receivedValues.email;
+    text.value = receivedValues.message;
+  }
+};
+
+// Improving the error message by ...
+
+email.addEventListener('keyup', () => {
+  if (email.value === email.value.toLowerCase()) {
+    message.classList.remove('error');
+    message.innerText = '';
+  } else {
+    message.classList.add('error');
+    message.innerText = 'Please use lowerCase letters for this input';
   }
 });
