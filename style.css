@@ -521,7 +521,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #172f4d;
+    background-color: rgb(23, 47, 77, 0.7);
     padding-right: 2rem;
     position: fixed;
     width: 100%;
