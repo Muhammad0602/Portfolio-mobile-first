@@ -11,8 +11,6 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
-
-  /* width: 375px; */
   background-image: url("./socialicons/contact-form.svg");
   background-repeat: no-repeat;
   background-position: 315px 6140px;
@@ -31,13 +29,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(86, 169, 180);
+  height: 3rem;
 }
 
 .menuicon {
   text-decoration: none;
 }
 
-.navbar ul {
+.navbar ul, .navbar img {
   display: none;
 }
 
@@ -513,6 +516,17 @@ h2 {
     display: none;
   }
 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172f4d;
+    padding-right: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
   .navbar ul {
     display: flex;
     justify-content: center;
@@ -520,9 +534,15 @@ h2 {
     padding: 24px;
     gap: 24px;
   }
-
+  
   .navbar li a {
+    color: white;
     text-decoration: none;
+  }
+
+  .navbar img {
+    display: flex;
+    width: 200px;
   }
 
   .wrapper {
