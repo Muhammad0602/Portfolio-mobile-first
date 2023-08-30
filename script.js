@@ -77,22 +77,26 @@ closeBtn.addEventListener('click', () => {
   toolbar.style.display = 'flex';
 });
 
-portfolio.addEventListener('click', () => {
-  nav.style.display = 'none';
-  closeBtn.style.display = 'none';
-  toolbar.style.display = 'flex';
-});
+window.addEventListener('resize', () => {
+  if (window.innerWidth < 1200) {
+    portfolio.addEventListener('click', () => {
+      nav.style.display = 'none';
+      closeBtn.style.display = 'none';
+      toolbar.style.display = 'flex';
+    });
+  }
 
-about.addEventListener('click', () => {
-  nav.style.display = 'none';
-  closeBtn.style.display = 'none';
-  toolbar.style.display = 'flex';
-});
+  about.addEventListener('click', () => {
+    nav.style.display = 'none';
+    closeBtn.style.display = 'none';
+    toolbar.style.display = 'flex';
+  });
 
-contact.addEventListener('click', () => {
-  nav.style.display = 'none';
-  closeBtn.style.display = 'none';
-  toolbar.style.display = 'flex';
+  contact.addEventListener('click', () => {
+    nav.style.display = 'none';
+    closeBtn.style.display = 'none';
+    toolbar.style.display = 'flex';
+  });
 });
 
 for (let i = 0; i < popupBtn.length; i += 1) {
@@ -141,9 +145,9 @@ form.addEventListener('input', () => {
 document.onreadystatechange = () => {
   if (document.readyState === 'complete') {
     const receivedValues = JSON.parse(localStorage.getItem('storeValues'));
-    fullName.value = receivedValues.name;
-    email.value = receivedValues.email;
-    text.value = receivedValues.message;
+    fullName.value = receivedValues?.name;
+    email.value = receivedValues?.email;
+    text.value = receivedValues?.message;
   }
 };
 
