@@ -78,12 +78,13 @@ closeBtn.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 1200)
+  if (window.innerWidth < 1200) {
     portfolio.addEventListener('click', () => {
-    nav.style.display = 'none';
-    closeBtn.style.display = 'none';
-    toolbar.style.display = 'flex';
-  });
+      nav.style.display = 'none';
+      closeBtn.style.display = 'none';
+      toolbar.style.display = 'flex';
+    });
+  }
 
   about.addEventListener('click', () => {
     nav.style.display = 'none';
@@ -97,7 +98,6 @@ window.addEventListener('resize', () => {
     toolbar.style.display = 'flex';
   });
 });
-
 
 for (let i = 0; i < popupBtn.length; i += 1) {
   popupBtn[i].addEventListener('click', () => {

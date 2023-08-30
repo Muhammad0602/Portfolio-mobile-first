@@ -40,7 +40,8 @@ body {
   text-decoration: none;
 }
 
-.navbar ul, .navbar img {
+.navbar ul,
+.navbar img {
   display: none;
 }
 
@@ -534,7 +535,7 @@ h2 {
     padding: 24px;
     gap: 24px;
   }
-  
+
   .navbar li a {
     color: white;
     text-decoration: none;
