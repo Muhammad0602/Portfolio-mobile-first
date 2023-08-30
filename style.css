@@ -11,6 +11,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
+
   /* width: 375px; */
   background-image: url("./socialicons/contact-form.svg");
   background-repeat: no-repeat;
@@ -184,12 +185,12 @@ h2 {
   right: 2.5rem;
   top: 2rem;
   padding: 5px;
-  background: #ffeeee;
+  background: #fee;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.card-work .close-detail:hover { 
+.card-work .close-detail:hover {
   background: #2d1c09f0;
 }
 
@@ -216,9 +217,11 @@ h2 {
   background: #fff;
   justify-content: start;
 }
+
 .card-tags {
   display: none;
 }
+
 .about-card ul > li {
   background-color: #fff;
   color: #36b37e;
@@ -264,7 +267,7 @@ h2 {
 .card-work .livebtn:hover,
 .card-work .sourcebtn:hover {
   background-color: #1b704d;
-} 
+}
 
 /* multi-post stories job */
 
@@ -326,7 +329,8 @@ h2 {
 }
 
 .bio-text {
-  background-image: url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
+  background-image:
+    url("socialicons/illustration\ 1-\ about\ me-mobile.svg"),
     url("socialicons/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position: 300px -10px, 1px 319px;
@@ -471,7 +475,7 @@ h2 {
     display: none;
   }
 
-   .about-me {
+  .about-me {
     display: grid;
     justify-content: center;
     align-items: start;
@@ -484,21 +488,20 @@ h2 {
     background-position: top;
     background-size: 100%;
   }
-  
+
   .bio-text {
     grid-column: 1 / -1;
     margin: 100px 0;
     width: 100%;
     background-image: none;
   }
-  
-   .about-me .about-card:last-child {
+
+  .about-me .about-card:last-child {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-column: 1 / -1;
   }
-
 }
 
 @media (min-width: 1200px) {
@@ -616,7 +619,7 @@ h2 {
     display: flex;
     list-style: none;
     gap: 5px;
-    grid-area: 7 / 1 / 8 / 3
+    grid-area: 7 / 1 / 8 / 3;
   }
 
   .card-description {

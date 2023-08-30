@@ -1,4 +1,4 @@
-import { arrayDesktop } from "./info.js";
+import arrayDesktop from './info.js';
 
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('.navbar > ul ');
@@ -11,7 +11,7 @@ const popupBtn = document.querySelectorAll('.popup-btn');
 const overlay = document.querySelector('#overlay');
 const fullName = document.getElementById('name');
 const email = document.getElementById('email');
-const text = document.getElementById('message'); 
+const text = document.getElementById('message');
 const message = document.querySelector('small');
 const submitBtn = document.getElementById('submit-btn');
 const form = document.getElementById('contact-form');
@@ -69,7 +69,7 @@ const cardWorkDesktop = (items) => `
     <p class="card-description">${arrayDesktop[items].description}</p>
     <script src="index.js"></script>
   </article>
-`
+`;
 
 closeBtn.addEventListener('click', () => {
   nav.style.display = 'none';
@@ -124,39 +124,37 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
-    
-  //  save input values inside of an object and localStorage
 
-let inputFieldValues = {}
+//  save input values inside of an object and localStorage
+
+const inputFieldValues = {};
 
 form.addEventListener('input', () => {
   inputFieldValues.name = fullName.value;
   inputFieldValues.email = email.value;
   inputFieldValues.message = text.value;
-  localStorage.setItem ('storeValues', JSON.stringify(inputFieldValues))
-})
+  localStorage.setItem('storeValues', JSON.stringify(inputFieldValues));
+});
 
 // Taking the input values back from the localStorage
 
- document.onreadystatechange = () => {
-  if (document.readyState === "complete") {
+document.onreadystatechange = () => {
+  if (document.readyState === 'complete') {
     const receivedValues = JSON.parse(localStorage.getItem('storeValues'));
     fullName.value = receivedValues.name;
     email.value = receivedValues.email;
     text.value = receivedValues.message;
   }
- }
+};
 
 // Improving the error message by ...
 
- email.addEventListener ('keyup', (ev) => {
-
-  if(email.value === email.value.toLowerCase()) {
+email.addEventListener('keyup', () => {
+  if (email.value === email.value.toLowerCase()) {
     message.classList.remove('error');
-    message.innerText = "";
-  }
-  else {
+    message.innerText = '';
+  } else {
     message.classList.add('error');
-    message.innerText = "Please use lowerCase letters for this input";
+    message.innerText = 'Please use lowerCase letters for this input';
   }
- })
+});
