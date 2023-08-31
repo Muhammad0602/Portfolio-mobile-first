@@ -47,13 +47,13 @@ const cardWorkDesktop = (items) => `
     <h2 class="card-name">${arrayDesktop[items].name}</h2>
     <div class="card-button">
        <div class="btn-container">
-        <a href=${arrayDesktop[items].linkVersion} class="livebtn">
+        <a href=${arrayDesktop[items].linkVersion} target="_blank" class="livebtn">
           See Live
            <img src="socialicons/liveicon.svg" alt="live icon">
         </a>    
         </div>
         <div class="btn-container">
-          <a href=${arrayDesktop[items].linkSource} class="sourcebtn">
+          <a href=${arrayDesktop[items].linkSource} target="_blank" class="sourcebtn">
             See Source
             <img src="socialicons/sourceicon.svg" alt="source icon">
           </a>  
