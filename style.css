@@ -684,13 +684,25 @@ h2 {
   /* popup window above here  */
 
   .my-works {
-    grid-template: 100px 474px 474px / repeat(3, 366px);
+    grid-template: 100px 474px 474px / repeat(3, 380px);
     margin-top: 100px;
+    gap: 3rem;
   }
 
   .my-works h2 {
     grid-column: 1 / 4;
   }
+
+  /* animation for the project */
+
+  /* .my-works .container{
+    transition: all 0.6s ease-in-out;
+  }
+
+  .my-works .container:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 5px 12px 0 rgb(10, 3, 47);
+  } */
 
   .center {
     display: none;
@@ -699,8 +711,8 @@ h2 {
   .about-me {
     display: grid;
     justify-content: center;
-    gap: 20px;
-    grid-template: 490px 352px / repeat(3, 366px);
+    gap: 2rem;
+    grid-template: 490px 352px / repeat(3, 380px);
     width: 100%;
     background-image: url("socialicons/about-me-desktop.svg");
     background-repeat: no-repeat;
