@@ -21,8 +21,8 @@ const arrayDesktop = [
     },
     description: `Udemy is an online course, where anyone who wants to learn something new, whether it is about 
       web development or something else, can benefit. They are trying to make learning easier for people all over the world. 
-      You can choose from variety of courses and teachers. If you are interested then check their website for more information.
-      I am sure you will not regret as people all over the world love spending their time with Udemy.`,
+      You can choose from a variety of courses and teachers. If you are interested, please check their website for more information.
+      I am confident you will not regret it as people all over the world love spending their time with Udemy.`,
   },
   {
     id: 1,
@@ -45,7 +45,7 @@ const arrayDesktop = [
         'codepen',
       ],
     },
-    description: 'Leaderboard project is based on API. The player\'s information and score are posted and then are taken from the API. It is fully responsive and has a cool design.',
+    description: 'The Leaderboard project is a dynamic platform that allows users to submit their names and scores, which are then retrieved and displayed through an API integration. With a sleek and responsive design, this project offers an engaging experience for participants. The user-submitted scores are showcased in a visually appealing table, ranking participants and awarding the top three performers with well-deserved medals. This interactive solution provides an enjoyable way to track and celebrate achievements while maintaining a user-friendly and modern interface.',
   },
   {
     id: 2,
@@ -91,7 +91,7 @@ const arrayDesktop = [
         'codepen',
       ],
     },
-    description: 'Welcome to the Space Traveler\'s Hub, your gateway to a universe of exploration. Browse our selection of cutting-edge rockets and reserve the one that ignites your curiosity. Join thrilling missions that take you to the stars and beyond, contributing to humanity\'s journey of discovery. With the freedom to cancel reservations and mission participation, your space adventure is in your hands. Your personalized profile keeps track of your experiences, making every moment memorable. Embark on an exciting voyage of rockets, missions, and limitless possibilities',
+    description: 'Welcome to the Space Traveler\'s Hub, your gateway to a universe of exploration. Browse our selection of cutting-edge rockets and reserve the one that ignites your curiosity. Join thrilling missions that take you to the stars and beyond, contributing to humanity\'s journey of discovery. With the freedom to cancel reservations and mission participation, your space adventure is in your hands. Your personalized profile keeps track of your experiences, making every moment memorable. Embark on an exciting voyage of rockets, missions, and limitless possibilities.',
   },
   {
     id: 4,
