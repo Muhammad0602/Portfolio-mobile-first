@@ -29,7 +29,7 @@
 # 📖 Portfolio-mobile-first <a name="about-project"></a>
 
 
-This project is how you make the mobile version of your portfolio. It is done using semantic HTML, CSS and JavaScript, essentially with flexbox and grid layout.
+My portfolio website showcases my work and projects in a clean and visually appealing way. Built using CSS, HTML, and JS, it offers a user-friendly experience for visitors to easily navigate and view my skills and abilities. I regularly update it with new projects and designs, so be sure to check back often for the latest additions!
 
 ## 🛠 Built With <a name="built-with"></a>
 
